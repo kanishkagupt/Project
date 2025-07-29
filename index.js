@@ -1,6 +1,10 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 app.use(express.json());
+
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
 
@@ -12,7 +16,6 @@ app.get('/bfhl', (req, res) => {
         roll_number: "2210991740"
     });
 });
-
 
 app.post('/bfhl', (req, res) => {
     const data = req.body.data || [];
@@ -56,11 +59,8 @@ app.post('/bfhl', (req, res) => {
     });
 });
 
-app.get('/', (req, res) => {
-    res.send('Welcome! Use /bfhl (GET or POST) to interact with this API.');
-});
-
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
 
