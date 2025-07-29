@@ -1,69 +1,84 @@
+/* Base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
+  background: #f4f5f2;
   margin: 0;
   padding: 0;
+  color: #2f302f;
 }
 
+/* Main Container */
 .container {
-  max-width: 700px;
+  max-width: 720px;
   margin: 40px auto;
-  padding: 20px;
-  background: #fff;
+  padding: 25px 30px;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
+/* Header */
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 0;
+  color: #2b2e29;
+  margin-bottom: 5px;
 }
 
 .subtext {
   text-align: center;
-  color: #777;
+  color: #6d7264;
   font-size: 14px;
   margin-bottom: 30px;
 }
 
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  color: #434a39;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Input Card */
 .card {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .card label {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 15px;
-  color: #444;
+  color: #4a4f40;
 }
 
 .card input {
   width: 100%;
-  box-sizing: border-box;
   padding: 12px 14px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
   font-size: 15px;
-  background-color: #f0f5ff;
-  transition: border-color 0.2s ease-in-out;
+  border: 2px solid #d7dccb;
+  border-radius: 8px;
+  background-color: #f7f9f3;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 .card input:focus {
-  border-color: #ff6600;
+  border-color: #6d8e4f;
   background-color: #ffffff;
   outline: none;
 }
 
+/* Button */
 .card button {
   width: 100%;
   padding: 12px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
-  background-color: #ff6600;
+  color: #fff;
+  background-color: #6d8e4f;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -71,47 +86,54 @@ h1 {
 }
 
 .card button:hover {
-  background-color: #e65c00;
+  background-color: #5f7e44;
 }
 
+/* Response Card */
 .response-card {
-  background-color: #fff3e6;
-  border-left: 6px solid #ffa31a;
+  background-color: #f9f8f3;
+  border-left: 6px solid #a1b57c;
   padding: 20px;
   border-radius: 12px;
   margin-top: 25px;
   font-size: 15px;
-  color: #333;
   white-space: normal;
   line-height: 1.6;
+  color: #333;
 }
 
 .response-card strong {
   display: inline-block;
   width: 160px;
-  color: #444;
+  color: #3f3f3f;
 }
 
-.hidden {
-  display: none;
-}
-
+/* Error Message */
 .error {
   background-color: #ffe5e5;
-  border-left: 5px solid red;
+  border-left: 5px solid #b30000;
   padding: 12px 20px;
   margin-top: 20px;
   border-radius: 10px;
-  color: #b30000;
+  color: #a80000;
   font-weight: bold;
 }
 
+/* Footer */
 footer {
   margin-top: 50px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: #999;
 }
+
+/* Hidden utility class */
+.hidden {
+  display: none;
+}
+
+
+
 
 
 
